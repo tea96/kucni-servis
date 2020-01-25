@@ -1,0 +1,8 @@
+CREATE TABLE [dbo].[Ocena] (
+    [Id_ocene]       INT IDENTITY (1, 1) NOT NULL,
+    [Id_korisnikaFK] INT NOT NULL,
+    [Vrednost]       INT NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id_ocene] ASC),
+    CONSTRAINT [Id_korisnika] FOREIGN KEY ([Id_korisnikaFK]) REFERENCES [dbo].[Korisnik] ([Id_korisnika])
+);
+

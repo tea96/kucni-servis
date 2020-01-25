@@ -1,0 +1,14 @@
+CREATE TABLE [dbo].[Korisnik] (
+    [Id_korisnika]  INT           IDENTITY (1, 1) NOT NULL,
+    [Ime]           NVARCHAR (50) NOT NULL,
+    [Prezime]       NVARCHAR (50) NOT NULL,
+    [KorisnickoIme] NVARCHAR (50) NULL,
+    [Sifra]         NVARCHAR (50) NULL,
+    [Grad]          NVARCHAR (50) NULL,
+    [Adresa]        NVARCHAR (50) NOT NULL,
+    [EMail]         NVARCHAR (50) NULL,
+    [Admin]         NVARCHAR (50) NOT NULL,
+    [Broj_telefona] NVARCHAR (20) NULL,
+    PRIMARY KEY CLUSTERED ([Id_korisnika] ASC)
+);
+

@@ -1,0 +1,6 @@
+CREATE TABLE [dbo].[Pruzanje_Usluga] (
+    [Id_korisnika] INT NOT NULL,
+    [Id_usluge]    INT NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id_korisnika] ASC, [Id_usluge] ASC)
+);
+
